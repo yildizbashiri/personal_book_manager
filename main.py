@@ -6,7 +6,9 @@ from books import show_books, load_books, save_books
 load_dotenv()
 
 name = input("Enter your name: ")
-print("Welcome to Your Personal Book Library")
+
+print("Welcome 2", name)
+
 
 admin = input("Enter Admin Mode? (yes/no): ")
 
@@ -32,11 +34,12 @@ for i in range(count):
         priority = input("Enter priority (low/medium/high): ")
 
     new_book = {
-        "namee": book,
+        "name": book,
         "priority": priority
     }
 
     books.append(new_book)
+    print(book, "added successfully")
 
 save_books(books)
 show_books(books)
