@@ -34,12 +34,12 @@ for i in range(count):
         priority = input("Enter priority (low/medium/high): ")
 
     new_book = {
-        "namee": book,
+        "name": book,
         "priority": priority
     }
 
     books.append(new_book)
+    print(book, "added successfully")
 
 save_books(books)
-print("Book added successfully")
 show_books(books)
